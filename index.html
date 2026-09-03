@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b080a">
+  <title>Aleks & Nicola — nasza historia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/Lucide.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="love-rain" aria-hidden="true"></div>
+<div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="grain"></div>
+
+  
+
+  <main id="site" class="site" aria-hidden="true">
+    <div class="progress"><span id="progress-bar"></span></div>
+    <button class="secret-dot" id="secret-dot" aria-label="Ukryty skarb"><span></span></button>
+
+    <section class="hero home-screen" id="home">
+      <div class="home-orbit home-orbit-a"></div>
+      <div class="home-orbit home-orbit-b"></div>
+      <div class="home-glow"></div>
+      <div class="home-content">
+        <div class="home-top reveal">
+          <span class="eyebrow">PRYWATNA HISTORIA • A × N</span>
+          <span class="home-date">OD 01.05.2026</span>
+        </div>
+        <div class="home-title reveal">
+          <span class="tiny">WITAJ W NASZYM ŚWIECIE</span>
+          <h1>Aleks <em>&</em> Nicola</h1>
+          <div class="love-date reveal-date">01.05.2026<span>♥</span></div>
+          <p>Nie otwieraj kolejnego rozdziału.<br><strong>Wejdź do środka.</strong></p>
+        </div>
+
+  <div class="music-player" id="music-player" aria-label="Odtwarzacz muzyki">
+    <div class="music-player-top">
+      <button class="music-main-toggle" id="music-main-toggle" aria-label="Odtwórz lub zatrzymaj muzykę">
+        <i data-lucide="play"></i>
+      </button>
+      <div class="music-track-info">
+        <span class="music-label">NASZA MUZYKA</span>
+        <strong id="music-title">I Thought I Saw Your Face Today</strong>
+        <small id="music-artist">Główna piosenka</small>
+      </div>
+      <button class="music-minimize" id="music-minimize" aria-label="Zwiń odtwarzacz">
+        <i data-lucide="chevron-down"></i>
+      </button>
+    </div>
+    <div class="music-progress-row">
+      <span id="music-current">0:00</span>
+      <input id="music-progress" type="range" min="0" max="100" value="0" aria-label="Postęp utworu">
+      <span id="music-duration">0:00</span>
+    </div>
+    <div class="music-tracks">
+      <button class="music-track active" data-track="0">
+        <span>01</span><div><b>I Thought I Saw Your Face Today</b><small>GŁÓWNA PIOSENKA</small></div>
+      </button>
+      <button class="music-track" data-track="1">
+        <span>02</span><div><b>Perfect — Ed Sheeran</b><small>MUZYKA W TLE • W PĘTLI</small></div>
+      </button>
+    </div>
+    <audio id="audio-song-1" preload="metadata" src="music/song1.mp3"></audio>
+    <audio id="audio-song-2" preload="metadata" src="music/song2.mp3" loop></audio>
+  </div>
+
+        <nav class="home-menu reveal" aria-label="Nawigacja historii">
+          <button data-page="story"><span>01</span><b>Nasz czas</b><small>Każda sekunda ma znaczenie</small><i data-lucide="arrow-up-right"></i></button>
+          <button data-page="reasons"><span>02</span><b>Dlaczego Ty</b><small>Powody, których nie da się policzyć</small><i data-lucide="arrow-up-right"></i></button>
+          <button data-page="gallery"><span>03</span><b>Momenty</b><small>Nasze małe arcydzieła</small><i data-lucide="arrow-up-right"></i></button>
+          <button data-page="timeline"><span>04</span><b>Nasza oś czasu</b><small>Od pierwszego „my”</small><i data-lucide="arrow-up-right"></i></button>
+          <button data-page="letter-section"><span>05</span><b>Tylko dla Ciebie</b><small>List, którego nie wysyła się pocztą</small><i data-lucide="arrow-up-right"></i></button>
+        </nav>
+        <div class="home-bottom reveal">
+          <span>WYBIERZ ROZDZIAŁ</span>
+          <button class="home-heart" id="home-heart" aria-label="Pokaż coś specjalnego"><i data-lucide="heart"></i></button>
+        </div>
+      </div>
+      <div class="hero-stamp">A<span>×</span>N</div>
+    </section>
+
+    <section class="story section page-panel" id="story">
+      <button class="back-home" data-home><i data-lucide="arrow-left"></i><span>WRÓĆ DO STRONY GŁÓWNEJ</span></button>
+      <div class="section-kicker reveal">01 — NASZ CZAS</div>
+      <div class="story-grid">
+        <div class="story-title reveal">
+          <p class="tiny">OD PIERWSZEGO „MY”</p>
+          <h2>Każda sekunda<br><em>ma znaczenie.</em></h2>
+        </div>
+        <div class="story-copy reveal">
+          <p>Od 1 maja 2026 świat wygląda trochę inaczej. Jest więcej powodów do uśmiechu, więcej wspólnych planów i ktoś, do kogo zawsze chce się wracać.</p>
+          <p class="muted">A skoro czas z Tobą leci inaczej, policzmy go dokładnie.</p>
+        </div>
+      </div>
+      <div class="counter reveal">
+        <div><strong id="years">0</strong><span>LAT</span></div>
+        <div><strong id="months">0</strong><span>MIESIĘCY</span></div>
+        <div><strong id="days">0</strong><span>DNI</span></div>
+        <div><strong id="hours">0</strong><span>GODZIN</span></div>
+        <div><strong id="minutes">0</strong><span>MINUT</span></div>
+        <div><strong id="seconds">0</strong><span>SEKUND</span></div>
+      </div>
+      <div class="story-extra reveal">
+        <div class="time-card">
+          <small>ŁĄCZNIE</small>
+          <strong><span id="total-days">0</span> dni</strong>
+          <p>Każdy z nich jest małym rozdziałem naszej historii.</p>
+        </div>
+        <div class="time-card time-card-story">
+          <small>WŁAŚNIE TERAZ</small>
+          <strong>NASZA HISTORIA</strong>
+          <p id="time-note">I właśnie dopisujemy kolejny piękny moment.</p>
+        </div>
+      </div>
+      <div class="time-quote reveal"><span>“</span><p>Nie chcę zatrzymywać czasu. Chcę tylko, żeby jak najwięcej jego fragmentów było z Tobą.</p><button class="micro-action" id="time-heart">ZATRZYMAJ CHWILĘ <i data-lucide="heart"></i></button></div>
+      <div class="time-details reveal">
+        <div><span>01</span><b>Ponad zwykłe dni</b><p>Każda kolejna doba to kolejny mały dowód, że wspólna codzienność potrafi być czymś wyjątkowym.</p></div>
+        <div><span>02</span><b>Jedna ulubiona osoba</b><p>Gdyby można było wybrać jedną osobę do wszystkich małych chwil — wybór już dawno byłby oczywisty.</p></div>
+        <div><span>03</span><b>Jeszcze nie koniec</b><p>Ten licznik nie odlicza do końca. On dopisuje kolejne sekundy do historii, którą dopiero tworzymy.</p></div>
+      </div>
+    </section>
+
+    <section class="reasons section page-panel" id="reasons">
+      <button class="back-home" data-home><i data-lucide="arrow-left"></i><span>WRÓĆ DO STRONY GŁÓWNEJ</span></button>
+      <div class="section-kicker reveal">02 — DLACZEGO TY</div>
+      <div class="reasons-head reveal">
+        <h2>Powodów jest<br><em>więcej niż słów.</em></h2>
+        <p>Mała kolekcja rzeczy, które Aleks widzi w Tobie każdego dnia.</p>
+      </div>
+      <div class="reason-grid" id="reason-grid"></div>
+      <div class="reasons-footer reveal"><span>KAŻDY POWÓD MA SWÓJ MAŁY SZCZEGÓŁ</span><button class="micro-action" id="reasons-random">LOSOWY POWÓD <i data-lucide="shuffle"></i></button></div>
+      <div class="reasons-extra reveal"><span>MAŁA PRAWDA</span><h3>Nie kocham Cię za jedną rzecz.</h3><p>Kocham sumę drobiazgów: sposób, w jaki się śmiejesz, jak reagujesz, jak potrafisz zmienić zwykły moment w wspomnienie. I chyba właśnie dlatego żadna lista powodów nigdy nie będzie wystarczająco długa.</p></div>
+    </section>
+
+    <section class="gallery section page-panel" id="gallery">
+      <button class="back-home" data-home><i data-lucide="arrow-left"></i><span>WRÓĆ DO STRONY GŁÓWNEJ</span></button>
+      <div class="section-kicker reveal">03 — MOMENTY</div>
+      <div class="gallery-head reveal">
+        <h2>Nasze małe<br><em>arcydzieła.</em></h2>
+        <span>4 ZDJĘCIA • KLIKNIJ, ABY POWIĘKSZYĆ</span>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+      <div class="gallery-note reveal"><span>✦</span><p>Niektóre chwile są krótkie. Te cztery chcemy zatrzymać trochę dłużej.</p><button class="micro-action" id="gallery-spark">ZOSTAW ŚLAD <i data-lucide="sparkles"></i></button></div>
+      <div class="gallery-memory reveal"><div><span>WSPOMNIENIE</span><b>„To właśnie takie chwile chcę pamiętać najdłużej.”</b></div><button class="micro-action" id="gallery-memory-btn">ODKRYJ WIADOMOŚĆ <i data-lucide="message-heart"></i></button></div>
+    </section>
+
+    <section class="timeline section page-panel" id="timeline">
+      <button class="back-home" data-home><i data-lucide="arrow-left"></i><span>WRÓĆ DO STRONY GŁÓWNEJ</span></button>
+      <div class="section-kicker reveal">04 — OŚ CZASU</div>
+      <div class="timeline-intro reveal"><p class="tiny">NIE CHODZI TYLKO O DATY</p><h2>Najważniejsze są<br><em>chwile pomiędzy.</em></h2><p>Bo związek nie składa się wyłącznie z wielkich momentów. Składa się z wiadomości wysłanych za późno, śmiechu bez powodu, planów na „kiedyś” i zwykłego „jestem”.</p></div><div class="timeline-wrap" id="timeline-wrap"></div><div class="timeline-footer reveal"><span>NASTĘPNY ROZDZIAŁ?</span><button class="micro-action" id="timeline-wish">DOPISZ ŻYCZENIE <i data-lucide="pen-line"></i></button></div>
+    </section>
+
+    <section class="letter section page-panel" id="letter-section">
+      <button class="back-home" data-home><i data-lucide="arrow-left"></i><span>WRÓĆ DO STRONY GŁÓWNEJ</span></button>
+      <div class="section-kicker reveal">05 — TYLKO DLA CIEBIE</div>
+      <div class="letter-stage reveal">
+        <div class="letter-glow"></div>
+        <button class="envelope" id="envelope" aria-label="Otwórz list">
+          <div class="envelope-paper"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-front"></div>
+          <div class="seal">A<span>×</span>N</div>
+          <span class="open-hint">OTWÓRZ</span>
+        </button>
+        <article class="love-letter" id="love-letter" aria-hidden="true">
+          <button class="close-letter" id="close-letter" aria-label="Zamknij list"><i data-lucide="x"></i></button>
+          <div class="letter-meta"><span class="tiny">DLA NICOLI</span><span>01.05.2026 — ✦</span></div>
+          <h2>Moja Nikusia,</h2>
+          <div id="letter-body"></div>
+          <div class="letter-ending"><p class="signature">Kocham Cię.<br><strong>— Aleks</strong></p><span>PS. To dopiero początek.</span></div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="lightbox-close" aria-label="Zamknij"><i data-lucide="x"></i></button>
+    <img id="lightbox-img" alt="">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <div class="secret-modal" id="secret-modal" aria-hidden="true">
+    <div class="secret-card">
+      <button id="secret-close" aria-label="Zamknij"><i data-lucide="x"></i></button>
+      <span class="eyebrow">ZNALEZIONE ✦</span>
+      <h2>Jeśli tu dotarłaś,<br><em>to znaczy, że szukasz.</em></h2>
+      <p>Nie każda rzecz na tej stronie jest oczywista. Ta jest specjalnie dla Ciebie.</p>
+      <div class="secret-heart">♥</div>
+    </div>
+  </div>
+
+
+  <div class="toast" id="toast">Znalazłaś ukryty szczegół ✦</div>
+  <script src="https://unpkg.com/lucide@latest" defer onerror="window.lucide=null"></script>
+  <script src="script.js" defer></script>
+
+
+
+</body>
+</html>
